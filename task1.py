@@ -1,8 +1,2 @@
 
-
-
-for i in range(100):
-    if i<10:
-        print("0"+str(i), end=", ")
-    else:
-        print(i, end=", ")
+print(*['0'+str(i) if i<10 else i for i in range(100)], sep = ', ')
